@@ -1,0 +1,65 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+}
+.container-flex {
+  display: flex;
+  justify-content: center;
+  max-width: 940px;
+  margin: 20px auto;
+  gap: 20px;
+}
+.container-flex .container {
+  width: 50%;
+  margin: 0;
+}
+.chart {
+  width: 100%;
+  min-height: 400px;
+}
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: #5b9bd5;
+}
+.bar-2019 { fill: #4e79a7; }
+.bar-2023 { fill: #f28e2b; }
+
+/* Estilos para eixos e texto do D3 */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #aaa;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+  fill: #555;
+}
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}

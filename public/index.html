@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trab Vis Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Análise de Corridas de Táxi: Fev/2019 vs Fev/2023</h1>
+
+    <div class="container">
+        <h2>Variação Temporal (Corridas por Hora)</h2>
+        <p>Comparativo dos picos de corrida durante o dia.</p>
+        <div id="chart_hourly" class="chart"></div>
+    </div>
+
+    <div class="container-flex">
+        <div class="container">
+            <h2>Métodos de Pagamento (2019)</h2>
+            <div id="chart_payments_2019" class="chart"></div>
+        </div>
+        <div class="container">
+            <h2>Métodos de Pagamento (2023)</h2>
+            <div id="chart_payments_2023" class="chart"></div>
+        </div>
+    </div>
+
+    <div class="container-flex">
+        <div class="container">
+            <h2>Top 5 Zonas de Partida (2019)</h2>
+            <div id="chart_top_zones_2019" class="chart"></div>
+        </div>
+        <div class="container">
+            <h2>Top 5 Zonas de Partida (2023)</h2>
+            <div id="chart_top_zones_2023" class="chart"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Composição da Tarifa (Valores Médios)</h2>
+        <div id="chart_fares" class="chart"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

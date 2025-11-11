@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trab Vis Dados</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Visualização de Dados</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>Análise de Corridas de Táxi: Fev/2019 vs Fev/2023</h1>
+    <h1>Análise de Corridas de Táxi - Fev de 2019 vs Fev de 2023</h1>
 
     <div class="container">
-        <h2>Variação Temporal (Corridas por Hora)</h2>
-        <p>Comparativo dos picos de corrida durante o dia.</p>
+        <h2>Variação Temporal (corridas por hora)</h2>
+        <p>Comparativo da quantidade de corridas ao longo do dia</p>
         <div id="chart_hourly" class="chart"></div>
+    </div>
+
+    <div class="container">
+        <h2>Variação Temporal (corridas por dia da semana)</h2>
+        <p>Comparativo da quantidade de corridas ao longo da semana</p>
+        <div id="chart_weekly" class="chart"></div>
     </div>
 
     <div class="container-flex">
@@ -38,7 +44,7 @@
     </div>
 
     <div class="container">
-        <h2>Composição da Tarifa (Valores Médios)</h2>
+        <h2>Comparativo das tarifas (valores médios)</h2>
         <div id="chart_fares" class="chart"></div>
     </div>
 
